@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Lobster&family=Poppins:wght@100;200;300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --theme-color: 255 115 179;
+    --themeText-color: 255 255 255;
+  }
+}

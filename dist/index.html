@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body class="md:flex md:justify-center md:items-center md:h-screen">
+    <div
+      class="loader flex justify-center items-center focus:outline-none p-10 fixed w-full h-full bg-slate-500/90 z-10 top-0 left-0"
+    >
+      <div
+        class="spinner animate-spin h-32 w-32 border-[16px] border-t-blue-600 border-red-600 border-b-yellow-400 border-l-green-700 rounded-full"
+      ></div>
+    </div>
+    <div
+      class="container relative flex flex-col md:flex-row md:w-[90%] min-h-screen md:justify-between md:h-[90vh] p-4 bg-cover bg-no-repeat bg-night"
+    >
+      <div
+        class="md:w-[70%] flex-grow flex flex-col text-textColor md:text-white"
+      >
+        <div class="">
+          <h1 class="font-body font-bold">Weather.FORECAST</h1>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center md:flex-row md:absolute md:m-6 flex-wrap flex-grow md:bottom-0 p-4 md:left-0 gap-2 md:bg-themeColor"
+        >
+          <div class="degree text-7xl font-curly font-semibold">25°</div>
+          <div class="md:flex gap-6 md:self-end">
+            <div>
+              <div
+                class="location font-lobster font-bold text-5xl text-center uppercase"
+              >
+                location name
+              </div>
+              <div
+                class="date-N-time hidden md:block font-body font-light text-sm"
+              >
+                23:01- tue, 25 july '233
+              </div>
+            </div>
+            <div
+              class="flex md:flex-col flex-row gap-4 md:gap-0 justify-center"
+            >
+              <img
+                src=""
+                alt="weather condition icon "
+                class="icon font-body font-light drop-shadow-lg shadow-black h-12 w-12"
+              />
+
+              <div class="condition font-curly md:text-xs self-center">
+                condition text
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-white md:mt-10 bg-themeColor">
+        <form class="flex w-full mb-2 z-10">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="another location"
+            class="flex-grow p-2 bg-transparent focus:outline-0 border-b"
+          />
+          <button type="submit">
+            <span class="material-symbols-outlined bg-yellow-600 p-2">
+              search
+            </span>
+          </button>
+        </form>
+        <ul class="border-b font-body font-normal text-xs text-slate-300">
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">MINSK</li>
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">TOKYO</li>
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">NEW YORK</li>
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">PARIS</li>
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">MEXICO</li>
+          <li class="p-2 option cursor-pointer hover:bg-slate-500">SYDNEY</li>
+        </ul>
+        <ul class="font-curly font-normal text-xs">
+          <h1 class="p-2 font-body uppercase font-semibold text-lg">
+            Weather Details
+          </h1>
+          <li class="flex justify-between m-2">
+            <div>feel's like</div>
+            <div class="feels_like">26°c</div>
+          </li>
+          <li class="flex justify-between m-2">
+            <div>Wind</div>
+            <div class="wind">8km/h</div>
+          </li>
+          <li class="flex justify-between m-2">
+            <div>Humidity</div>
+            <div class="humidity">62%</div>
+          </li>
+          <li class="flex justify-between m-2">
+            <div>cloudy</div>
+            <div class="cloudy">62%</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

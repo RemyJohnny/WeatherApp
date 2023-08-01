@@ -1,0 +1,36 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "weather forecast site using the weather API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemyJohnny/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "Remy Johnny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RemyJohnny/WeatherApp/issues"
+  },
+  "eslintIgnore": "main.js",
+  "homepage": "https://github.com/RemyJohnny/WeatherApp#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.1.0",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
