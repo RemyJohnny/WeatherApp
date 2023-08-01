@@ -58,7 +58,7 @@ const themes = [
     name: "night",
     color: "26 55 67",
     bg: "bg-night",
-    textColor: "29 255 255",
+    textColor: "26 255 255",
   },
 ];
 
